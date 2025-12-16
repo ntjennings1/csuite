@@ -21,22 +21,42 @@ First, clone CSuite to your local machine:
 git clone https://www.github.com/ntjennings1/csuite.git
 ```
 
-Then enter the cloned directory:
+Then enter the cloned directory ($CSuite_HOME):
 ```
 cd $CWD/csuite
 ```
 
-### Executing
+NOTE: Make sure you add these to your path:
+```
+Qt_HOME/6.10.1/mingw_64\bin
+Qt_HOME/Tools/QtCreator/bin
+```
 
-To perform CSuite functionalities, open the packaged CMakeLists.txt in Qt Creator. 
+### Opening
 
-From here, users can easily build source code. Building will open the UI and allow users to perform their desired tasks.
+Once inside the clonse directory, open CSuite's CMakeLists.txt file in Qt Creator:
+```
+qtcreator CMakeLists.txt
+```
+
+This will take a minute.
 
 ### Changing
+ 
+After loading with Qt, users can access the following directories to change CSuite's functionalities:
+```
+CSuite_HOME/Forms
+CSuite_HOME/Header Files
+CSuite_HOME/Source Files
+```
 
-To change CSuite, open the packaged CMakeLists.txt in Qt Creator.
+Inside are the same CPP & Header files users see through Git.
 
-From here, users can easily alter the source code. Altering the code will provide a customizable education experience that users will remember. 
+### Executing
+
+To perform CSuite functionalities, open the packaged CMakeLists.txt in Qt Creator:
+
+Once Qt indexes source code and dependencies, users can easily execute CSuite. This will open the UI and allow users to perform their desired tasks.
 
 ## Acknowledgements
 ```
